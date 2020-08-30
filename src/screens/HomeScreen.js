@@ -23,9 +23,9 @@ const HomeScreen = ({navigation}) => {
         <ScrollView showsVerticalScrollIndicator={false}>
         <StatusBar style="light"/>
         {errorMessage ? <Text>{errorMessage}</Text>:null}
-        <ResultsList navigation={navigation} results={filterResultsByPrice("₺")} title="Ekonomik"/>
-        <ResultsList navigation={navigation} results={filterResultsByPrice("₺₺")} title="Orta Halli"/>
-        <ResultsList navigation={navigation} results={filterResultsByPrice("₺₺₺")} title="Lüks"/>
+        <ResultsList results={filterResultsByPrice("₺")} title="Ekonomik"/>
+        <ResultsList results={filterResultsByPrice("₺₺")} title="Orta Halli"/>
+        <ResultsList results={filterResultsByPrice("₺₺₺")} title="Lüks"/>
         </ScrollView>
         </>
     )

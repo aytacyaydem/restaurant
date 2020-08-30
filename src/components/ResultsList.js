@@ -1,6 +1,8 @@
 import React from "react"
 import {Text,View,StyleSheet,FlatList,TouchableOpacity} from "react-native"
 import ResultsDetail from "../components/ResultsDetail"
+import {withNavigation} from "react-navigation"
+
 const ResultsList = ({title,results,navigation}) => {
     
     return (
@@ -32,4 +34,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default ResultsList
+export default withNavigation(ResultsList)
